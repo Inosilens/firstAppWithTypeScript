@@ -1,11 +1,11 @@
 import {TodoActions, TodoActionsType, TodoState} from "../../types/todos";
-const defaultState:TodoState = {
-    todos : [],
-    loading : false,
-    error : null,
-    page : 1,
-    limit : 5
-}
+const defaultState: TodoState = {
+  todos: [],
+  loading: false,
+  error: null,
+  page: 1,
+  limit: 5,
+};
 
 export const todoReducer = (state :TodoState = defaultState,action :TodoActions):TodoState=>{
     switch (action.type){
